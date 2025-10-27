@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.main{
+    background-color: #00ff99;
+    height: 100vh;
+  font-family: "Rozha One", serif;
+  color: black;
+}
