@@ -15,7 +15,7 @@ body{
 .nav_bar{
     display: flex;
     justify-content: space-between;
-    background-color:#535c91d1;
+    background-color:rgba(0, 0, 0, 0.648);
     position: fixed;
     top: 0;
     width: 100%;
@@ -35,12 +35,22 @@ body{
     padding: 16px;
 }
 .options a{
-    text-decoration: none;
-    color: black
+
+    text-decoration:underline black;
+    color: white;
+    opacity: 0.75;
 }
 .options a:hover{
-    font-weight: 500;
-    text-decoration: underline black;
+    opacity: 1;
+    animation: anchorStyle 2s alternate 0s infinite;
+}
+@keyframes anchorStyle {
+    from{
+        text-decoration: underline black;
+    }
+    to{
+        text-decoration: underline white;
+    }
 }
 span{
     font-weight:500;
@@ -96,7 +106,10 @@ img{
     background-color: #50589C;
     border-radius: 16px;
     margin: 16px;
-    box-shadow: 15px 6px 20px 5px black;
+    box-shadow: 13px 12px 10px 2px black;
+}
+.skillSection:hover{
+    background-color: #7682eb47;
 }
 .skillSection h1{
     margin-left: 16px;
@@ -112,7 +125,7 @@ img{
 }
 .skills:hover{
     border: 1px solid black;
-    box-shadow:15px 13px 20px 5px #5b5bc9;
+    box-shadow:15px 13px 20px 5px rgba(0, 0, 0, 0.7);
 }
 .include{
     display: flex;
@@ -147,7 +160,7 @@ img{
     border-radius: 16px;
 }
 .intro:hover{
-    box-shadow: 12px 12px 18px 9px rgba(0, 0, 0, 0.601);
+    box-shadow: 16px 14px 8px 1px rgba(0, 0, 0, 0.601);
 }
 button{
     width: 120px;
@@ -167,13 +180,35 @@ button:hover{
 .icons{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 1.5rem;
     margin: 1rem;
 }
-.icon i{
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: rgba(0, 255, 255, 0.737);
     font-size: 30px;
+    height: 50px;
+    width: 50px;
+    margin: 0.25rem;
+    border-radius: 50%;
     padding: 0.75rem;
+}
+.icon i:hover{
+    font-size: 35px;
+    animation: styles 2s ease-in-out 0s infinite alternate;
+}
+@keyframes styles {
+    from{
+        font-size: 35px;
+        color: rgba(0, 255, 255, 0.737);
+    }
+    to{
+        font-size: 40px;
+        color: black;
+    }
 }
 .contact{
     background-color: rgba(72, 209, 205, 0.607);
@@ -190,4 +225,51 @@ button:hover{
 }
 .number p:hover{
     font-weight: 500;
+}
+.sideMenu{
+    background-color: rgb(13, 230, 75);
+    opacity:0.75;
+    width: 250px;
+    z-index: 1;
+    box-shadow: 14px 9px 10px 2px black;
+    position: absolute;
+    margin: 60px 0 0 -500px;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+    animation: sideMenuStyle 3s ease-in 0s 1 linear;
+}
+@keyframes sideMenuStyle {
+    from{
+        margin: 60px 0 0 -500px
+    }to{
+        margin: 60px 0 0 0;
+    }
+}
+.SideMenuHeading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 25px;
+}
+.hamburger:hover{
+    color: red;
+    filter: drop-shadow(2px 2px 10px red);
+}
+.sideOption{
+    padding: 1rem;
+    text-align: center;
+}
+.sideOption a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.sideOption:hover{
+    background-color: gray;
+}
+@media (max-width:850px) {
+    .nav_options{
+        display: none;
+    }
 }
