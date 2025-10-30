@@ -28,6 +28,7 @@ body{
 .nav_name{
     font-weight: 800;
     color: #38BDF8;
+    transform: skew(-20deg);
 }
 .options{
     margin-right: 50px;
@@ -67,7 +68,6 @@ span{
     margin: 15px 15px 15px 0;
     color: #F7E7CE;
     text-shadow: 15px 5px 10px black;
-
 }
 .name_photo{
     display: flex;
@@ -79,7 +79,7 @@ span{
     .name_photo{
         display: flex;
         flex-direction: column;
-        margin: 150px 0 50px 20px;
+        margin: 150px 10px 50px 20px;
     }
     .image{
         margin-top: 10px;
@@ -196,9 +196,31 @@ button:hover{
     border-radius: 50%;
     padding: 0.75rem;
 }
+.icon i{
+    color: rgba(0, 255, 255, 0.737);
+}
+.icon img{
+    opacity: 0.75;
+    height: 29px;
+    width: 29px;
+    box-shadow: none;
+    filter: drop-shadow(2px 2px 10px gray);
+}
+.icon img:hover{
+    animation: img 2s ease-in-out 0s infinite;
+}
+@keyframes img {
+    from{
+        height: 29px;
+        width: 29px;
+    }to{
+        height: 35px;
+        width: 35px;
+    }
+}
 .icon i:hover{
     font-size: 35px;
-    animation: styles 2s ease-in-out 0s infinite alternate;
+    animation: styles 2s ease-in-out 0s infinite;
 }
 @keyframes styles {
     from{
@@ -216,26 +238,32 @@ button:hover{
 .details{
     text-align: center;
 }
-
 .contact i{
     font-size: 35px;
 }
 .number{
     font-size: 35px;
+    margin: 0;
+}
+.info{
+    font-size: 35px;
+}
+.contact_info{
+    margin-top: 10px;
 }
 .number p:hover{
     font-weight: 500;
 }
 .sideMenu{
-    background-color: rgb(13, 230, 75);
+    background-color:black;
     opacity:0.75;
+    height: 100vh;
     width: 250px;
     z-index: 1;
     box-shadow: 14px 9px 10px 2px black;
     position: absolute;
     margin: 60px 0 0 -500px;
-    border-bottom-right-radius: 16px;
-    border-top-right-radius: 16px;
+    border-radius: 16px;
     animation: sideMenuStyle 3s ease-in 0s 1 linear;
 }
 @keyframes sideMenuStyle {
@@ -250,6 +278,7 @@ button:hover{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    color: orchid;
     font-size: 25px;
 }
 .hamburger:hover{
@@ -259,6 +288,8 @@ button:hover{
 .sideOption{
     padding: 1rem;
     text-align: center;
+    margin: 10px;
+    border-radius: 16px;
 }
 .sideOption a{
     text-decoration: none;
@@ -266,7 +297,7 @@ button:hover{
     font-size: 20px;
 }
 .sideOption:hover{
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.31);
 }
 @media (max-width:850px) {
     .nav_options{
