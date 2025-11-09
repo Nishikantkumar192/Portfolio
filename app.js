@@ -1,8 +1,11 @@
-let icon=document.querySelector(".hamburger");
-icon.addEventListener("click",()=>{
-    let sideMenu=document.querySelector(".sideMenu");
-    sideMenu.style.marginleft ="-500px";
+let crossSign=document.querySelector(".crossSign");
+let sideMenu=document.querySelector(".sideMenu");
+crossSign.addEventListener("click",()=>{
+    console.log("crossSign clicked");
+    sideMenu.style.marginLeft="-500px"
 })
-
-let sideOption=document.querySelectorAll(".sideOption");
-for(opt )
+let hamDiv=document.querySelector(".hamDiv");
+hamDiv.addEventListener("click",()=>{
+    console.log("hamDiv clicked");
+    sideMenu.style.marginLeft="0px";
+})
