@@ -1,11 +1,16 @@
-let crossSign=document.querySelector(".crossSign");
-let sideMenu=document.querySelector(".sideMenu");
-let hamDiv=document.querySelector(".hamDiv");
-crossSign.addEventListener("click",()=>{
-    sideMenu.style.marginLeft="-500px"
-    hamDiv.style.display="block";
+const express=require("express");
+const port=8080;
+const app=express();
+const engine=require("ejs-mate");
+
+const path=require("path");
+app.use(express.static(path.join(__dirname,"public")));
+app.engine("ejs",engine);
+app.set("view-engine","ejs");
+
+app.listen(port,()=>{
+    console.log(`app is listening through port ${port}`);
 })
-hamDiv.addEventListener("click",()=>{
-    sideMenu.style.marginLeft="0px";
-    hamDiv.style.display="none";
+app.get("/portfolio",(req,res)=>{
+    res.render("Home/home.ejs");
 })

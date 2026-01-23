@@ -1,0 +1,24 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "This is my portfolio.\r Added some animation and started building hamburger.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nishikantkumar192/Portfolio.git"
+  },
+  "author": "Nishi kant kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nishikantkumar192/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Nishikantkumar192/Portfolio#readme",
+  "dependencies": {
+    "ejs": "^4.0.1",
+    "ejs-mate": "^4.0.0",
+    "express": "^5.2.1"
+  }
+}
