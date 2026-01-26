@@ -169,7 +169,6 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     color:white;
     font-weight: 600;
     height: 55px;
