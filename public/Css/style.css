@@ -156,6 +156,10 @@ img{
     font-weight: 800;
     color:#f5efed;
 }
+.skillSection h2{
+    color: #f4f4f9;
+    text-decoration: underline;
+}
 .skills{
     display: flex;
     flex-wrap: wrap;
@@ -182,7 +186,7 @@ img{
     transform: rotateY(360deg);
 }
 .include i{
-    font-size: 35px;
+    font-size: 25px;
 }
 .include:hover{
     box-shadow: 0 0 3px 0 #7180ac;
