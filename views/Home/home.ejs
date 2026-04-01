@@ -1,106 +1,180 @@
 <% layout("layouts/boilerplate.ejs") -%>
-        <section id="home">
-        <div class="name_photo">
-            <div class="about" id="height">
-                <p>Hello, I’m</p>
-                <p id="name">Nishi kant kumar</p>
-                    <h2 style="margin-bottom: 0;"><span id="type"></span></h2>
-                   <p style="line-height: 45px;margin-top: 0;"> with experience in building full-stack web applications using MongoDB, Express, React, and Node.js <br>
-                <span>B.Tech | National Institute of Technology Arunachal pradesh.</span> </p>
-            </div>
-            <div class="image" id="pic">
-                <img class="mypic" src="/related/my photo.jpeg">
-            </div>
-        </div>
-        </section>
-        <section id="skills">
-            <div class="skillSection">
-                <p>Technical Skills</p>
-            <div class="skills">
-                <h2><i class="fa-solid fa-code"></i>Frontend</h2>
-                <div class="include"><i class="fa-brands fa-html5"></i>HTML</div>
-                <div class="include"><i class="fa-brands fa-css3-alt"></i> CSS</div>
-                <div class="include"><i class="fa-brands fa-square-js"></i>JavaScript</div>
-                <div class="include"><i class="fa-brands fa-bootstrap"></i>Bootstrap</div>
-                <div class="include">EJS (Server-side templating)</div>
-            </div>
-            <div class="skills">
-                <h2><i class="fa-solid fa-server"></i>Backend</h2>
-                <div class="include"><i class="fa-brands fa-node-js"></i>Node.js</div>
-                <div class="include">Express.js</div>
-            </div>
-             <div class="skills">
-                <h2><i class="fa-solid fa-database"></i>Database</h2>
-                <div class="include"><i class="fa-solid fa-database"></i>MongoDB</div>
-                <div class="include">MongoDB-atlas</div>
-            </div>
-            <div class="skills">
-                <h2><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Platform</h2>
-                <div class="include"><i class="fa-brands fa-square-git"></i>Git</div>
-                <div class="include"><i class="fa-brands fa-github"></i>GitHub</div>
-                <div class="include"><i class="fa-solid fa-cloud"></i>Cloudinary</div>
-                <div class="include">VS Code</div>
-            </div>
-                <div class="skills">
-                <h2><i class="fa-solid fa-terminal"></i>Programming</h2>
-                <div class="include"><i class="fa-solid fa-database"></i>C++ Programing</div>
-            </div>
-            </div>
-        </section>
-        <section id="about">
-    <div class="intro_outer">
-        <div class="intro-collection">
-            <div class="intro">
-                <h1>About Me</h1>
-                <p>Hello, I’m Nishikant Kumar — a Full-Stack Web Developer with experience in building 
-                    responsive frontend interfaces and scalable backend applications. I enjoy solving
-                    problems using Data Structures & Algorithms and turning ideas into real-world web solutions.</p>
-            </div>
-            <div class="intro">
-               <h1>What I’m Working On</h1>
-                <p>
-                    Actively exploring React.js and strengthening problem-solving skills through regular DSA practice on LeetCode.
-                </p>
-            </div>
-            <div class="intro">
-                <h1>My Live Full-Stack Projects</h1>
-                <p>Dive into projects I’ve built from frontend to backend.</p>
-                <ul>
-                    <li><a target="_blank" href="https://wanderlust-o59u.onrender.com">Wanderlust – Travel Listing Web Application</a></li>
-                    <li><a target="_blank" href="https://previous-year-papers-q1u6.onrender.com">Previous Year Papers – An online portal for accessing college PYQs.</a></li>
-                </ul>
-                <p>PYQ Portal (In Progress) – Feature-rich web app with backend logic complete; working on authentication and enhanced UI.</p>
-               
-            </div>
-            <div class="intro resume-section">
-                <div><h1>View My Resume</h1>
-                <p>Get a detailed overview of my skills, projects, and education.
-                Designed to highlight my experience in building modern web applications with practical, hands-on experience.</p></div>
-                <div><button type="button" class="view-resume-btn">
-                    <a href="/related/Nishikantkumar_MERNDeveloper.pdf" style="color: white;">Download Resume</a></button></div>
-            </div>
-        </div>
+<section id="home">
+  <div class="name_photo">
+    <div class="about" id="height">
+      <p>Hello, I’m</p>
+      <p id="name">Nishi kant kumar</p>
+      <h2 style="margin-bottom: 0"><span id="type"></span></h2>
+      <p style="line-height: 45px; margin-top: 0">
+        with experience in building full-stack web applications using MongoDB,
+        Express, React, and Node.js <br />
+        <span
+          >B.Tech | National Institute of Technology Arunachal pradesh.</span
+        >
+      </p>
     </div>
-    </section>
+    <div class="image" id="pic">
+      <img class="mypic" src="/related/my photo.jpeg" />
+    </div>
+  </div>
+</section>
+<section id="skills">
+  <div class="skillSection">
+    <p>Technical Skills</p>
+    <div class="skills">
+      <h2><i class="fa-solid fa-code"></i>Frontend</h2>
+      <div class="include"><i class="fa-brands fa-react"></i> React.js</div>
+      <div class="include">
+        <i class="fa-brands fa-square-js"></i>JavaScript (ES6+)
+      </div>
+      <div class="include"><i class="fa-brands fa-html5"></i>HTML5</div>
+      <div class="include"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+      <div class="include"><i class="fa-brands fa-bootstrap"></i>Bootstrap</div>
+    </div>
+    <div class="skills">
+      <h2><i class="fa-solid fa-server"></i>Backend</h2>
+      <div class="include"><i class="fa-brands fa-node-js"></i>Node.js</div>
+      <div class="include">Express.js</div>
+      <div class="include">REST API Development</div>
+      <div class="include">JWT Authentication</div>
+    </div>
+    <div class="skills">
+      <h2><i class="fa-solid fa-database"></i>Database</h2>
+      <div class="include"><i class="fa-solid fa-database"></i>MongoDB</div>
+      <div class="include">Mongoose</div>
+      <div class="include">MongoDB Atlas</div>
+    </div>
+    <div class="skills">
+      <h2><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Platform</h2>
+      <div class="include"><i class="fa-brands fa-square-git"></i>Git</div>
+      <div class="include"><i class="fa-brands fa-github"></i>GitHub</div>
+      <div class="include">Render</div>
+      <div class="include">Vercel</div>
+      <div class="include"><i class="fa-solid fa-cloud"></i>Cloudinary</div>
+      <div class="include">Hoppscotch</div>
+    </div>
+    <div class="skills">
+      <h2><i class="fa-solid fa-terminal"></i>Programming</h2>
+      <div class="include">C++ Programing</div>
+      <div class="include">JavaScript</div>
+    </div>
+  </div>
+</section>
+<section id="about">
+  <div class="intro_outer">
+    <div class="intro-collection">
+      <div class="intro">
+        <h1>About Me</h1>
+        <p>
+          Hello, I’m Nishikant Kumar, a Full-Stack Web Developer specializing in
+          React.js, Node.js, and MongoDB. I build scalable, high-performance web
+          applications and excel at solving complex problems using Data
+          Structures & Algorithms, translating ideas into efficient, real-world
+          solutions.
+        </p>
+      </div>
+      <div class="intro">
+        <h1>What I’m Working On</h1>
+        <p>
+          Currently developing a feature-rich e-commerce platform with React.js
+          and MongoDB, implementing product listings, shopping cart, and user
+          authentication, while continuously enhancing problem-solving and
+          algorithmic skills through LeetCode challenges.
+        </p>
+      </div>
+      <div class="intro">
+        <h1>My Live Full-Stack Projects</h1>
+        <p>
+          Download my resume to review my technical skills, projects, and
+          academic background, highlighting hands-on experience in developing
+          modern, scalable web applications.
+        </p>
+        <ul>
+          <li>
+            <a target="_blank" href="https://wanderlust-o59u.onrender.com"
+              >Wanderlust – Travel Listing Web Application</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://previous-year-papers-q1u6.onrender.com"
+              >Previous Year Papers – An online portal for accessing college
+              PYQs.</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="https://notes-api-with-auth.vercel.app/"
+              >Notes App – Role-Based Note Management</a
+            >
+          </li>
+        </ul>
+        <p>
+          PYQ Portal (In Progress) – Feature-rich web app with backend logic
+          complete; working on authentication and enhanced UI.
+        </p>
+      </div>
+      <div class="intro resume-section">
+        <div>
+          <h1>View My Resume</h1>
+          <p>
+            Get a detailed overview of my skills, projects, and education.
+            Designed to highlight my experience in building modern web
+            applications with practical, hands-on experience.
+          </p>
+        </div>
+        <div>
+          <button type="button" class="view-resume-btn">
+            <a
+              href="/related/Nishikantkumar_MERNDeveloper.pdf"
+              style="text-decoration: none;"
+              >Download Resume</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <section id="contact">
-        <div class="icons">
-        <div class="icon"><a href="https://www.linkedin.com/in/nishi-kant-kumar-509131329"><i class="fa-brands fa-square-linkedin"></i></a></div>
-        <div class="icon"><a href="https://github.com/Nishikantkumar192"><i class="fa-brands fa-github"></i></a></div>
-        <div class="icon"><a href="https://wa.me/917630075654"><i class="fa-brands fa-whatsapp"></i></a></div>
-        <div class="icon"><a href="https://www.instagram.com/nishikant7236"><i class="fa-brands fa-instagram"></i></a></div>
-        </div>
-    <div class="contact details">
-        <div class="details">
-            <h2>Contact Details</h2>
-            <div class="contact_info">
-                <i class="fa-solid fa-phone"></i>
-                <span class="info">7630075654</span>
-            </div>
-            <div class="contact_info">
-                <i class="fa-solid fa-envelope"></i>
-                <span class="info"><a href="mailto:nishikants192@gmail.com">nishikants192@gmail.com</a></span>
-            </div>
-        </div>
+<section id="contact">
+  <div class="icons">
+    <div class="icon">
+      <a href="https://www.linkedin.com/in/nishi-kant-kumar-509131329"
+        ><i class="fa-brands fa-square-linkedin"></i
+      ></a>
     </div>
-    </section>
+    <div class="icon">
+      <a href="https://github.com/Nishikantkumar192"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+    </div>
+    <div class="icon">
+      <a href="https://wa.me/917630075654"
+        ><i class="fa-brands fa-whatsapp"></i
+      ></a>
+    </div>
+    <div class="icon">
+      <a href="https://www.instagram.com/nishikant7236"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+    </div>
+  </div>
+  <div class="contact details">
+    <div class="details">
+      <h2>Contact Details</h2>
+      <div class="contact_info">
+        <i class="fa-solid fa-phone"></i>
+        <span class="info">7630075654</span>
+      </div>
+      <div class="contact_info">
+        <i class="fa-solid fa-envelope"></i>
+        <span class="info"
+          ><a href="mailto:nishikants192@gmail.com"
+            >nishikants192@gmail.com</a
+          ></span
+        >
+      </div>
+    </div>
+  </div>
+</section>

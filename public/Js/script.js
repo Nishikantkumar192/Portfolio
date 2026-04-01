@@ -1,5 +1,5 @@
 new Typed("#type", {
-    strings: ["Aspiring MERN Stack Developer "],
+    strings: ["MERN Stack Developer "],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
