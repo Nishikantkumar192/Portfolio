@@ -111,7 +111,7 @@ span{
     .name_photo{
         display: flex;
         flex-direction: column;
-        margin: 150px 10px 50px 20px;
+        margin: 100px 10px 50px 20px;
     }
     .image{
         margin-top: 10px;
@@ -127,17 +127,15 @@ span{
     height: 370px;
     width: 320px;
     border-radius: 16px;
-    transition: transform 3s ease;
-    transform-style: preserve-3d;
-}
-#pic:hover{
-    transform: rotateY(360deg);
 }
 img{
     height:350px;
     width: 300px;
     border-radius: 16px;
-    box-shadow: 1px 1px 10px 5px black;
+    box-shadow: 0 0 20px 0 black;
+}
+img:hover{
+    box-shadow: 0 0 20px 0 pink;
 }
 .skillSection{
     background-color: transparent;
@@ -210,6 +208,9 @@ img{
     padding: 1rem;
     border-radius: 16px;
     background-color: #7180ac;
+}
+.intro:hover{
+    box-shadow: 0 0 10px 0 pink;
 }
 .resume-section{
     display: flex;
