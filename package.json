@@ -20,8 +20,12 @@
   },
   "homepage": "https://github.com/Nishikantkumar192/Portfolio#readme",
   "dependencies": {
+    "dotenv": "^17.4.2",
     "ejs": "^4.0.1",
     "ejs-mate": "^4.0.0",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "mongoose": "^9.9.3",
+    "multer": "^2.2.0",
+    "multer-storage-cloudinary": "^4.0.0"
   }
 }

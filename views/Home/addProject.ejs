@@ -1,0 +1,125 @@
+<% layout("layouts/boilerplate.ejs") -%>
+
+<div class="project-form-container">
+    <div class="project-card">
+
+        <h2>Add New Project</h2>
+        <p class="form-subtitle">Add your project to the portfolio</p>
+
+        <form 
+            action="/project/add-project" 
+            method="POST" 
+            enctype="multipart/form-data"
+        >
+
+            <div class="form-group">
+                <label for="images">Project Image</label>
+                <input 
+                    type="file" 
+                    id="images"
+                    name="images" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="projectLink">Live Project</label>
+                <input 
+                    type="text"
+                    id="projectLink"
+                    name="projectLink"
+                    placeholder="https://your-project.com"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="githubLink">GitHub Repository</label>
+                <input 
+                    type="text"
+                    id="githubLink"
+                    name="githubLink"
+                    placeholder="https://github.com/username/project"
+                    required
+                >
+            </div>
+
+            <button type="submit">
+                Add Project
+            </button>
+
+        </form>
+    </div>
+</div>
+
+<style>
+    .project-form-container {
+        min-height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 15px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 500px;
+        background: white;
+        padding: 35px;
+        border-radius: 18px;
+        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+    }
+
+    .project-card h2 {
+        margin: 0;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .form-subtitle {
+        text-align: center;
+        color: #777;
+        margin-bottom: 30px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .form-group input {
+        padding: 12px 14px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        font-size: 15px;
+        outline: none;
+    }
+
+    .form-group input:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+    }
+
+    .project-card button {
+        width: 100%;
+        padding: 13px;
+        border: none;
+        border-radius: 10px;
+        background: #007bff;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .project-card button:hover {
+        background: #0056b3;
+    }
+</style>

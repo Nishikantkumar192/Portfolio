@@ -1,20 +1,47 @@
+const dotenv=require("dotenv");
+dotenv.config();
 const express=require("express");
-const port=8080;
+const port=process.env.PORT;
 const app=express();
 const engine=require("ejs-mate");
+const mongoose=require("mongoose");
 
 const path=require("path");
+const ExpressError = require("./ExpressError");
+const { connect } = require("http2");
 app.use(express.static(path.join(__dirname,"public")));
 app.engine("ejs",engine);
 app.set("view-engine","ejs");
+
+// Router
+const project=require("./routes/project_route.js");
+
+// Connecting data-base
+const dbUrl=process.env.MONGODB_URL;
+main().then(()=>{
+    console.log("Connected successfully");
+}).catch((err)=>{
+    console.log(err);
+})
+async function main() {
+    await mongoose.connect(dbUrl);
+}
 
 app.listen(port,()=>{
     console.log(`app is listening through port ${port}`);
 })
 
+
 app.get("/",(req,res)=>{
-    res.redirect("/portfolio")
+    res.redirect("/portfolio");
 })
-app.get("/portfolio",(req,res)=>{
-    res.render("Home/home.ejs");
+app.use("/portfolio",project);
+
+// Error handling
+app.use((req,res,next)=>{
+    return next(new ExpressError(404,"Page not found"));
+})
+app.use((err,req,res,next)=>{
+    const {status=500,message="Server Error"}=err;
+    res.send(message);
 })
