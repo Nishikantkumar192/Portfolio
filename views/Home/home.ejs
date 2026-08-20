@@ -12,6 +12,8 @@
           >B.Tech | National Institute of Technology Arunachal pradesh.</span
         >
       </p>
+      <a style="font-size: large;font-weight:600; background-color: rgb(63, 80, 34); width: 125px;text-decoration: none; padding: 5px 10px; color: white;"
+       href="/related/Nishikant's_Resume.pdf">View Resume</a>
     </div>
     <div class="image" id="pic">
       <img class="mypic" src="/related/my photo.jpeg" />
@@ -60,78 +62,49 @@
   </div>
 </section>
 <section id="about">
-  <div class="intro_outer">
-    <div class="intro-collection">
-      <div class="intro">
-        <h1>About Me</h1>
-        <p>
-          Hello, I’m Nishikant Kumar, a Full-Stack Web Developer specializing in
-          React.js, Node.js, and MongoDB. I build scalable, high-performance web
-          applications and excel at solving complex problems using Data
-          Structures & Algorithms, translating ideas into efficient, real-world
-          solutions.
-        </p>
-      </div>
-      <div class="intro">
-        <h1>What I’m Working On</h1>
-        <p>
-          Currently developing a feature-rich e-commerce platform with React.js
-          and MongoDB, implementing product listings, shopping cart, and user
-          authentication, while continuously enhancing problem-solving and
-          algorithmic skills through LeetCode challenges.
-        </p>
-      </div>
-      <div class="intro">
-        <h1>My Live Full-Stack Projects</h1>
-        <ul>
-          <li>
-            <a
-              target="_blank"
-              href="https://shopeasy-ecommerce-ubgf.vercel.app"
-            >
-              Built a full-stack platform for product browsing, cart management,
-              and secure checkout with authentication.
+<div style="display: flex;flex-direction: column; justify-content: center; align-items: center;padding: 5px 15px;">
+  <h2 style="margin: 0; color:red; margin-bottom: 10px;">About Me..</h2>
+  <div style="display: flex; flex-wrap: wrap; color: white;max-width: 700px; padding: 5px 20px; box-shadow: 0 0 15px 0 black;border-radius: 10px;">
+    <p style="line-height: 30px; font-size: 20px;">
+
+Hi, I'm **Nishi kant Kumar**, a B.Tech student at **NIT Arunachal Pradesh** and a passionate **MERN Stack Developer**.
+
+I enjoy building full-stack web applications using **MongoDB, Express.js, React, and Node.js**. I have experience working with REST APIs, authentication, database integration, file uploads, and deploying applications using platforms such as Vercel, Render, and Cloudinary.
+
+Along with web development, I regularly practice **Data Structures and Algorithms in C++** to strengthen my problem-solving and programming skills.
+
+I'm currently looking for opportunities where I can apply my skills, work on real-world projects, and continue growing as a software developer.
+</p>
+  </div>
+</div>
+</section>
+<section id="projects">
+  <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h2 style="color: red;">Projects</h2>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: stretch; gap: 24px; max-width: 1080px; margin: 0 auto;">
+      <%projects.forEach((project)=>{%>
+      <div class="project-card">
+
+        <img src="<%= project.images[0].url %>" alt="<%= project.title %>">
+
+        <div class="project-content">
+
+          <h3><%= project.title %></h3>
+
+          <div class="project-links">
+            <a href="<%= project.projectLink %>" target="_blank">
+              Live Demo
             </a>
-          </li>
-          <li>
-            <a target="_blank" href="https://wanderlust-o59u.onrender.com"
-              >Wanderlust – Travel Listing Web Application</a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://previous-year-papers-q1u6.onrender.com"
-              >Previous Year Papers – An online portal for accessing college
-              PYQs.</a
-            >
-          </li>
-          <li>
-            <a target="_blank" href="https://notes-api-with-auth.vercel.app/"
-              >Notes App – Role-Based Note Management</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="intro resume-section">
-        <div>
-          <h1>View My Resume</h1>
-          <p>
-            Get a detailed overview of my skills, projects, and education.
-            Designed to highlight my experience in building modern web
-            applications with practical, hands-on experience.
-          </p>
+
+            <a href="<%= project.githubLink %>" target="_blank">
+              GitHub
+            </a>
+          </div>
+
         </div>
-        <div>
-          <button type="button" class="view-resume-btn">
-            <a
-              href="/related/Nishikant's_Resume.pdf"
-              style="text-decoration: none"
-              >Download Resume</a
-            >
-          </button>
-        </div>
+
       </div>
+      <%})%>
     </div>
   </div>
 </section>
@@ -161,7 +134,7 @@
   </div>
   <div class="contact">
     <div class="details">
-      <a href="mailto:nishikants192@gmail.com">nishikants192@gmail.com</a>
+      <a href="mailto:nishikants192@gmail.com">nishikantsingh3568@gmail.com</a>
       <span>ph-no:+91-7630075654</span>
     </div>
     <div class="details">

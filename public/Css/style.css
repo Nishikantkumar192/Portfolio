@@ -45,7 +45,6 @@ body{
     text-decoration: underline;
 }
 .options{
-    margin-right: 50px;
     font-size: 20px;
     padding: 16px;
 }
@@ -128,13 +127,13 @@ span{
     width: 320px;
     border-radius: 16px;
 }
-img{
+.mypic{
     height:350px;
     width: 300px;
     border-radius: 16px;
     box-shadow: 0 0 20px 0 black;
 }
-img:hover{
+.mypic:hover{
     box-shadow: 0 0 20px 0 pink;
 }
 .skillSection{
@@ -142,11 +141,9 @@ img:hover{
     border-radius: 16px;
     margin:32px 16px;
     padding: 30px;
-}
-
-.skillSection:hover{
     box-shadow: 3px 2px 6px 2px black;
 }
+
 .skillSection p{
     margin: 0;
     padding-top: 20px;
