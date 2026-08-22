@@ -1,0 +1,188 @@
+<% layout("layouts/boilerplate.ejs") %>
+
+<div class="signup-container">
+  <div class="signup-form">
+
+    <div class="signup-header">
+      <h1>Create Account ✨</h1>
+      <p>Sign up to get started with us</p>
+    </div>
+
+    <form action="/auth/signup" method="POST">
+
+      <div class="signup-credentials">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter your username"
+          required
+        />
+      </div>
+
+      <div class="signup-credentials">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <div class="signup-credentials">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Create a password"
+          required
+        />
+      </div>
+
+      <button type="submit" class="signup-btn">
+        Create Account
+      </button>
+
+    </form>
+
+    <div class="login-text">
+      Already have an account?
+      <a href="/auth/login">Login</a>
+    </div>
+
+  </div>
+</div>
+
+<style>
+
+  .signup-container {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  }
+
+  .signup-form {
+    width: 100%;
+    max-width: 410px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  }
+
+  .signup-header {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .signup-header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #111827;
+  }
+
+  .signup-header p {
+    margin-top: 8px;
+    color: #6b7280;
+    font-size: 14px;
+  }
+
+  .signup-credentials {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 17px;
+  }
+
+  .signup-credentials label {
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+  }
+
+  .signup-credentials input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+    outline: none;
+    font-size: 14px;
+    background: #f9fafb;
+    transition: 0.2s ease;
+  }
+
+  .signup-credentials input:focus {
+    border-color: #6366f1;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+  }
+
+  .signup-credentials input::placeholder {
+    color: #9ca3af;
+  }
+
+  .signup-btn {
+    width: 100%;
+    border: none;
+    padding: 13px;
+    border-radius: 9px;
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+  }
+
+  .signup-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.25);
+  }
+
+  .signup-btn:active {
+    transform: translateY(0);
+  }
+
+  .login-text {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 13px;
+    color: #6b7280;
+  }
+
+  .login-text a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .login-text a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 480px) {
+
+    .signup-container {
+      padding: 20px 15px;
+    }
+
+    .signup-form {
+      padding: 25px 20px;
+    }
+
+    .signup-header h1 {
+      font-size: 24px;
+    }
+  }
+
+</style>

@@ -13,7 +13,11 @@
         >
       </p>
       <a style="font-size: large;font-weight:600; background-color: rgb(63, 80, 34); width: 125px;text-decoration: none; padding: 5px 10px; color: white;"
-       href="/related/Nishikant's_Resume.pdf" target="_blank">View Resume</a>
+       href="<%=resume.resume.url%>" target="_blank" rel="noopener noreferrer">View Resume</a>
+       <%if(user?.role==="admin"){%>
+       <a style="font-size: large;font-weight:600; margin-top: 10px; background-color: rgb(63, 80, 34); width: 140px;text-decoration: none; padding: 5px 10px; color: white;" 
+       href="/portfolio/add-new-resume">update-resume</a>
+       <%}%>
     </div>
     <div class="image" id="pic">
       <img class="mypic" src="/related/my photo.jpeg" />
